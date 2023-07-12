@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20,20,20);
+}
+
+.myGenres {
+    background-color: rgb(20,20,20);
+    margin-left: 10px;
+}
+
+.myProf {
+    background-color: transparent;
+    border: 0;
+}
+
+.myAvatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.mySearch {
+    color: white;
+}
+
+.myName {
+    color: white;
+    margin: 0 10px;
+}
+
+/*sections*/
+
+section {
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.myControl {
+    background-color: rgba(70, 70, 70, 0.2);
+    width: 2%;
+    top: 36px;
+    z-index: 10;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    
+}
+
+.card-cnt {
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    border: 1px lightslategrey;
+    background: rgba(30, 30, 30);
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around;
+    /* visibility: hidden; */
+    margin-top: -25px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card-btn{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.card-cnt:hover {
+    scale: 1.5;
+    z-index: 5;
+    overflow: visible;
+}
+
+.card-cnt:hover .card-info {
+    visibility: visible;
+    margin-top: 5px;
+}
+
+.videoTitle {
+    margin-top: -25px;
+    transition: all 0.3s ease-in-out;
+    font-size: x-small;
+}
+
+.card-cnt:hover .videoTitle {
+    margin: 10px;
+} 
+
+/*footer*/
+
+footer {
+    
+    bottom: 0;
+    z-index: 1;
+}
+
+.footer-cnt {
+    margin-top: 50px;
+    max-width: 40%;
+    height: 100%;
+    /* background-color: lightcyan; */
+    margin: 0 25vw;
+}
+
+.myList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    font-size: x-small;
+}
+
+.list-item {
+    margin: 1px 7px;
+}

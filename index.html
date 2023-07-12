@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone D7</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md flex-nowrap" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#"><img src="assets/imgs/Netflix_Logo_RGB.png" alt="Netflix" width="100" height="auto"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My List</a>
+                    </li>
+                  </ul>
+                </div>
+
+            </div>
+
+            <div class="rightIcons d-flex align-items-center">
+                <a href=""><i class="bi bi-search mySearch"></i></a>
+
+                <span class="myName">KIDS</span>
+
+                <a href=""><i class="bi bi-bell mySearch"></i></a>
+
+                <div class="dropdown">  
+                <button class=" myProf btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="myAvatar" src="assets/imgs/avatar-7.jpg" alt="avatar">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Comedy</a></li>
+                    <li><a class="dropdown-item" href="#">Crime</a></li>
+                    <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+
+        <nav class="navbar" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="myTitle d-flex align-items-center">
+                    <h3 class="navbar-text text-light">
+                        TV Shows
+                    </h3>
+                    <div class="dropdown">
+                        <button class=" myGenres btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        <li><a class="dropdown-item" href="#">Crime</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                        <li><a class="dropdown-item" href="#">Sport</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="myViews d-flex">
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-view-list"></i></button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-grid"></i></button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="mySlider-1 container-fluid">
+
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <h4 class="text-light">Trending now</h4>
+                  <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row g-1">
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/1.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Unorthodox"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/2.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"After Life"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/3.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Vis A Vis"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/4.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"The Place"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/5.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Summer Time"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/6.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"I Delitti Di Valhalla"</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row g-1">
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/1.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Unorthodox"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"After Life"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/3.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Vis A Vis"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/4.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"The Place"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/5.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Summer Time"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/6.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"I Delitti Di Valhalla"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+                </div>
+                <button class="myControl carousel-control-prev justify-content-start" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="myControl carousel-control-next justify-content-end" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="mySlider-2 container-fluid">
+
+            <div id="myCarousel2" class="carousel slide">
+                <div class="carousel-inner">
+                    <h4 class="text-light">Trending now</h4>
+                  <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row g-1">
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/1.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Unorthodox"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/2.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"After Life"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/3.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Vis A Vis"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/4.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"The Place"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/5.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"Summer Time"</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-2 card-cnt">
+                                    <div class="card">
+                                        <div class="img-box">
+                                            <img src="assets/imgs/movies/6.png" alt="">
+                                        </div>
+                                        <div class="card-info">
+                                            
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                            <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                            
+                                        </div>
+                                        <span class="videoTitle text-light">"I Delitti Di Valhalla"</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row g-1">
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/1.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Unorthodox"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/2.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"After Life"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/3.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Vis A Vis"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/4.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"The Place"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/5.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"Summer Time"</span>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 card-cnt">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="assets/imgs/movies/6.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-play-fill"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-plus-lg"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-hand-thumbs-up"></i></button>
+                                        <button type="button" class="card-btn btn btn-outline-light"><i class="bi bi-chevron-down"></i></button>
+                                        
+                                    </div>
+                                    <span class="videoTitle text-light">"I Delitti Di Valhalla"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+                </div>
+                <button class="myControl carousel-control-prev justify-content-start" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="myControl carousel-control-next justify-content-end" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-cnt container-fluid">
+            <div class="row">
+                <div class="socialIcons col text-secondary">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+                <div class="row">
+                    <ul class="myList text-secondary text-capitalize">
+                        <li class="list-item col-3">answer and questions</li>
+                        <li class="list-item col-3">media center</li>
+                        <li class="list-item col-3">privacy</li>
+                        <li class="list-item col-3">contact us</li>
+                        <li class="list-item col-3">audio</li>
+                        <li class="list-item col-3">invester</li>
+                        <li class="list-item col-3">help center</li>
+                        <li class="list-item col-3">jobs</li>
+                        <li class="list-item col-3">cookie preferences</li>
+                        <li class="list-item col-3">gift card</li>
+                        <li class="list-item col-3">terms of use</li>
+                        <li class="list-item col-3">corporate information</li>
+                        <li class="list-item col-3">legal office</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary btn-sm col-3">Contact Us</button>
+                    <span class="font-sm text-secondary d-block fw-light col-12">© 2022 Geeks. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
