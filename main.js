@@ -14,9 +14,8 @@ console.log(Yo);
 
 
 function myFunction() {
-    if (document.scrollingElement > 20) {
+    if (document.scrollingElement > 50) {
         Yo.className = "test";
-        
     }
     
 }
