@@ -42,7 +42,51 @@ body {
 }
 
 
-/*sections*/
+.rightIcons {
+    position: absolute;
+    right: 100px;
+    top: 2px;
+}
+
+
+.myViews {
+    align-items: center;
+    justify-content: center;
+}
+
+.myViews button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+/*main*/
+
+
+main {
+    position: relative;
+    height: 1000px;
+}
+
+
+.mySlider-1 {
+    position: absolute;
+}
+
+.mySlider-2 {
+    position: absolute;
+    top: 20%;
+}
+
+.mySlider-3 {
+    position: absolute;
+    top: 40%;
+}
+
+.mySlider-4 {
+    position: absolute;
+    top: 60%;
+}
+
 
 section {
     margin-top: 30px;
@@ -71,6 +115,7 @@ h4 {
 
 .img-box img {
     width: 100%;
+    border-radius: 3%;
     
 }
 
@@ -136,7 +181,11 @@ h4 {
 /*footer*/
 
 footer {
-    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
 }
 
 .footer-cnt {
@@ -144,6 +193,7 @@ footer {
 
     max-width: 50%;
     height: 100%;
+    position: absolute;
     /*background-color: lightcyan;*/
 
 }
@@ -165,6 +215,10 @@ footer {
     margin: 5px 2px;
 }
 
+
+a {
+    text-decoration: none;
+}
 .footer-cnt .btn {
     font-size: x-small;
     padding: 2px;
@@ -177,7 +231,10 @@ footer {
 
 /*prova JS*/
 
-.test {
+/*.test {
    opacity: 0;
-}
+}*/
 
+.second-slider {
+    display: none;
+}
