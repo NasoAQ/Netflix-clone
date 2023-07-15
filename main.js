@@ -20,21 +20,56 @@
     
 // }
 
+let main = document.querySelector('main');
+let scrollSecond = main.offsetHeight * 0.1;
+let secondSlider = document.querySelector('.second-slider');
+let scrollThird = main.offsetHeight * 0.2;
+let thirdSlider = document.querySelector('.third-slider');
+let scrollFourth = main.offsetHeight * 0.3;
+let fourthSlider = document.querySelector('.fourth-slider');
+
 document.addEventListener('DOMContentLoaded', function() {
-    let main = document.querySelector('body');
-    let secondSlider = document.querySelector('.second-slider');
-    let scrollThreshold = main.offsetHeight * 0.2;
   
     function handleScroll() {
       let scrollPosition = window.pageYOffset;
   
-      if (scrollPosition > scrollThreshold) {
-        secondSlider.style.display = 'block';
-      }// else {
-    //     secondSlider.style.display = 'none';
-    //   }
+      if (scrollPosition > scrollSecond) {
+        secondSlider.style.visibility = 'visible';
+        
+    }  if (scrollPosition > scrollThird) {
+        thirdSlider.style.visibility = 'visible';
+
+        
+    }  if (scrollPosition > scrollFourth) {
+        fourthSlider.style.visibility = 'visible';
+    }
+
     }
   
     window.addEventListener('scroll', handleScroll);
   });
+
+
+
+  //prova barra di ricerca// non funziona
+
+  function toggleSearch() {
+    const searchBar = document.getElementsByClassName("myPlaceholder")
+    searchBar.classList.toggle("bar-open")
+}
+
+window.addEventListener("DOMContentLoaded", function(evt) {
+    const searchBtn = document.getElementsByClassName("mySearch")
+
+    searchBtn.addEventListener("click", function () {
+        toggleSearch()
+    })
+
+    const newBar = this.document.querySelector(".bar-open")
+})
+
+
+newBar.addEventListener("click", function() {
+    newBar.classList.toggle("open")
+})
   
