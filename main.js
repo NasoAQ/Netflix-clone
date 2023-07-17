@@ -51,25 +51,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  //prova barra di ricerca// non funziona
+  //prova barra di ricerca// funziona
 
   function toggleSearch() {
-    const searchBar = document.getElementsByClassName("myPlaceholder")
-    searchBar.classList.toggle("bar-open")
+    const searchBar = document.getElementById("myPlaceholder")
+    //console.log(searchBar);
+    searchBar.classList.toggle('bar-open')
 }
 
 window.addEventListener("DOMContentLoaded", function(evt) {
-    const searchBtn = document.getElementsByClassName("mySearch")
+
+    const searchBtn = document.getElementById("myLen")
+
+   // console.log(searchBtn);
 
     searchBtn.addEventListener("click", function () {
         toggleSearch()
     })
 
-    const newBar = this.document.querySelector(".bar-open")
-})
+   /* const newBar = document.querySelector(".bar-open");
 
+    newBar.addEventListener("click", function() {
+        newBar.classList.toggle("bar-open")
+    })*/
 
-newBar.addEventListener("click", function() {
-    newBar.classList.toggle("open")
 })
   
